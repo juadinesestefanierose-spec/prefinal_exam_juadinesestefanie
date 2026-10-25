@@ -1,0 +1,120 @@
+.jshop-navbar {
+  position: sticky;
+  top: 0;
+  z-index: 500;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 16px 6%;
+  background: rgba(255, 255, 255, 0.96);
+  border-bottom: 1px solid #e9e7f3;
+  backdrop-filter: blur(12px);
+}
+
+.jshop-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0;
+  border: none;
+  background: transparent;
+  color: #303b67;
+  font-size: 1.6rem;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.jshop-brand img {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+}
+
+.brand-dot {
+  color: #b9b3dc;
+}
+
+.jshop-nav-links {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.jshop-nav-links button {
+  padding: 8px 0;
+  border: none;
+  background: transparent;
+  color: #55536f;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.jshop-nav-links button:hover {
+  color: #303b67;
+}
+
+.jshop-nav-actions {
+  display: flex;
+  align-items: center;
+}
+
+.jshop-cart-button {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 25px;
+  background: #303b67;
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.jshop-cart-count {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 22px;
+  height: 22px;
+  padding: 0 5px;
+  border-radius: 50%;
+  background: #b9b3dc;
+  color: #252638;
+  font-size: 0.75rem;
+}
+
+@media (max-width: 650px) {
+  .jshop-navbar {
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 12px 4%;
+  }
+
+  .jshop-brand {
+    font-size: 1.35rem;
+  }
+
+  .jshop-brand img {
+    width: 34px;
+    height: 34px;
+  }
+
+  .jshop-nav-links {
+    order: 3;
+    justify-content: center;
+    width: 100%;
+    gap: 28px;
+  }
+
+  .jshop-nav-links button {
+    font-size: 0.88rem;
+  }
+
+  .jshop-cart-button {
+    padding: 9px 12px;
+    font-size: 0.85rem;
+  }
+}

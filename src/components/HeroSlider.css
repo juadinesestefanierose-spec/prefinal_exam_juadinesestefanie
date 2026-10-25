@@ -1,0 +1,142 @@
+.hero-slider {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 440px;
+  padding: 60px 10%;
+  overflow: hidden;
+  background-color: #303b67;
+  background-position: center;
+  background-size: cover;
+  color: #ffffff;
+}
+
+.hero-shade {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(37, 38, 56, 0.88),
+    rgba(48, 59, 103, 0.48)
+  );
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 600px;
+}
+
+.hero-content > span {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #8278bb;
+}
+
+.hero-content h1 {
+  margin: 10px 0;
+  font-size: clamp(2.3rem, 5vw, 4rem);
+  line-height: 1;
+  color:#b899e0 ;
+}
+
+.hero-content p {
+  max-width: 450px;
+  margin-bottom: 28px;
+  color: #7681c4;
+  line-height: 1.8;
+}
+
+.hero-content > button {
+  padding: 13px 25px;
+  border: none;
+  border-radius: 8px;
+  background: #743fee;
+  color: #e8e0ff;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.hero-content > button:hover {
+  background: #aa9ef1;
+}
+
+.hero-arrow {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  width: 42px;
+  height: 42px;
+  border: 1px solid rgba(62, 24, 105, 0.6);
+  border-radius: 50%;
+  background: rgba(248, 210, 255, 0.15);
+  color: #521f69;
+  font-size: 1.8rem;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.hero-prev {
+  left: 20px;
+}
+
+.hero-next {
+  right: 20px;
+}
+
+.hero-dots {
+  position: absolute;
+  z-index: 2;
+  bottom: 22px;
+  left: 50%;
+  display: flex;
+  gap: 9px;
+  transform: translateX(-50%);
+}
+
+.hero-dots button {
+  width: 9px;
+  height: 9px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background: #e9e5ff;
+  cursor: pointer;
+}
+
+.hero-dots button.active {
+  width: 25px;
+  border-radius: 8px;
+  background: #f6e1ff;
+}
+
+@media (max-width: 600px) {
+  .hero-slider {
+    min-height: 390px;
+    padding: 45px 12%;
+  }
+
+  .hero-content h1 {
+    font-size: 2.3rem;
+  }
+
+  .hero-content p {
+    font-size: 0.9rem;
+  }
+
+  .hero-prev {
+    left: 7px;
+  }
+
+  .hero-next {
+    right: 7px;
+  }
+
+  .hero-arrow {
+    width: 32px;
+    height: 32px;
+    font-size: 1.4rem;
+  }
+}

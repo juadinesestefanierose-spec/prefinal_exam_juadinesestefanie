@@ -1,0 +1,121 @@
+
+:root {
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: #252638;
+  background: #ffffff;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+
+  --jshop-indigo: #303b67;
+  --jshop-lavender: #b9b3dc;
+  --jshop-mist: #e9e7f3;
+  --jshop-plum: #252638;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--jshop-indigo);
+  outline-offset: 3px;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+}
+
+.app-placeholder {
+  width: min(1100px, 92%);
+  min-height: 60vh;
+  margin: 0 auto;
+  padding: 70px 0;
+}
+
+.app-placeholder h1 {
+  color: var(--jshop-indigo);
+}
+
+.app-placeholder > button,
+.checkout-summary > button {
+  margin: 12px 8px 0 0;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  background: var(--jshop-indigo);
+  color: white;
+}
+
+.checkout-summary {
+  max-width: 650px;
+  margin: 24px 0;
+}
+
+.checkout-item {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 10px;
+  padding: 16px 0;
+  border-bottom: 1px solid #e5e4e7;
+}
+
+.checkout-quantity {
+  display: flex;
+  gap: 8px;
+  grid-column: 1 / -1;
+}
+
+.checkout-quantity button {
+  padding: 6px 12px;
+  border: 1px solid #d8d5e7;
+  border-radius: 6px;
+  background: var(--jshop-mist);
+  color: var(--jshop-indigo);
+}
+
+.app-footer {
+  margin-top: auto;
+  padding: 24px 16px;
+  background: var(--jshop-mist);
+  color: var(--jshop-indigo);
+  text-align: center;
+  font-size: 14px;
+}
+
+@media (max-width: 600px) {
+  .app-placeholder {
+    padding: 40px 0;
+  }
+
+  .checkout-item {
+    font-size: 14px;
+  }
+}

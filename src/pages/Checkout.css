@@ -1,0 +1,125 @@
+
+.checkout-page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 35px 24px 60px;
+  color: #252638;
+}
+
+.checkout-back {
+  margin-bottom: 24px;
+  padding: 10px 16px;
+  border: 1px solid #b9b3dc;
+  border-radius: 8px;
+  background: white;
+  color: #303b67;
+  cursor: pointer;
+}
+
+.checkout-container {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 32px;
+  align-items: start;
+}
+
+.checkout-form-section,
+.checkout-summary {
+  padding: 28px;
+  border: 1px solid #e9e7f3;
+  border-radius: 16px;
+  background: white;
+}
+
+.checkout-form-section h1 {
+  margin-top: 0;
+  color: #303b67;
+}
+
+.checkout-form-section > p {
+  color: #6b6b80;
+  margin-bottom: 24px;
+}
+
+.checkout-form-section form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.checkout-form-section label {
+  margin-top: 8px;
+  font-weight: 600;
+}
+
+.checkout-form-section input,
+.checkout-form-section textarea,
+.checkout-form-section select {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px;
+  border: 1px solid #d7d4e8;
+  border-radius: 8px;
+  font: inherit;
+  color: #252638;
+  background: #fff;
+}
+
+.checkout-place-order {
+  margin-top: 18px;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  background: #303b67;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.checkout-place-order:hover {
+  background: #252638;
+}
+
+.checkout-summary h2 {
+  margin-top: 0;
+  color: #303b67;
+}
+
+.checkout-summary-item,
+.checkout-summary-total {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 14px 0;
+  border-bottom: 1px solid #e9e7f3;
+}
+
+.checkout-summary-item span {
+  overflow-wrap: anywhere;
+}
+
+.checkout-summary-total {
+  margin-top: 12px;
+  border-bottom: none;
+  font-size: 1.1rem;
+}
+
+.checkout-summary-total strong {
+  color: #303b67;
+}
+
+@media (max-width: 700px) {
+  .checkout-page {
+    padding: 24px 16px 40px;
+  }
+
+  .checkout-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .checkout-form-section,
+  .checkout-summary {
+    padding: 20px;
+  }
+}
